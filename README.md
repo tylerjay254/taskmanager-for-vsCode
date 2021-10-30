@@ -3,7 +3,7 @@ this is a vscode extension that helps track tasks in agile processes. (similar t
   
 ## Features
 one can create a tasklist and the extention will help manage the tasks with occasional alerts
-a user can also automate their github commit and push processes by adding a simple <end task> tag at the end of their code
+a user can also automate their github commit and push processes by adding a simple `</endtask>` tag at the end of their code
 
 
 ## Requirements
