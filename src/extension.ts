@@ -6,7 +6,7 @@ import {ViewPane} from "./SidePanel";
 export function activate(context: vscode.ExtensionContext) {
 	
 
-	console.log('Congratulations, your extension "taskmanager" is now active!');
+	console.log('starting task managemnt service');
 
 	context.subscriptions.push(vscode.commands.registerCommand("taskmanager.tasklogs",() => {
 		ViewPane.createOrShow(context.extensionUri);

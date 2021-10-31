@@ -123,12 +123,12 @@ export class ViewPane {
   }
 
   private _getHtmlForWebview(webview: vscode.Webview) {
-    // // And the uri we use to load this script in the webview
+// And the uri we use to load this script in the webview
     const scriptUri = webview.asWebviewUri(
       vscode.Uri.joinPath(this._extensionUri, "out", "compiled/swiper.js")
     );
 
-    // Local path to css styles
+// Local path to css styles
      const styleResetPath = vscode.Uri.joinPath(
        this._extensionUri,
        "media",
@@ -139,10 +139,12 @@ export class ViewPane {
        "media",
        "vscode.css"
      );
+    // const mainDotCssPath = vscode.Uri.joinPath(this._extensionUri, "media" ,"main.css");
 
-    // // Uri to load styles into webview
+    // Uri to load styles into webview
      const stylesResetUri = webview.asWebviewUri(styleResetPath);
      const stylesMainUri = webview.asWebviewUri(stylesPathMainPath);
+     //const mainsCssPath = webview.asWebviewUri(mainDotCssPath);
     //  const cssUri = webview.asWebviewUri(
     //    vscode.Uri.joinPath(this._extensionUri, "out", "compiled/swiper.css")
     //  );
@@ -156,7 +158,7 @@ export class ViewPane {
 			<meta charset="UTF-8">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <link href="${stylesResetUri}" rel="stylesheet">
-            <link href="${stylesMainUri}" rel="stylesheet">
+            <link href="${ stylesMainUri}" rel="stylesheet">
             <script nonce="${nonce}"></script>
 			</head>
               <body>
